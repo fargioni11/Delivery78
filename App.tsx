@@ -7,6 +7,7 @@ import {
   Button,
   ToastAndroid,
 } from "react-native";
+import { RoundedButton } from "./src/components/RoundedButton";
 
 export default function App() {
   return (
@@ -45,10 +46,9 @@ export default function App() {
           />
         </View>
         <View style={{ marginTop: 30 }}>
-          <Button
-            title="Ingresar"
-            color={"orange"}
-            onPress={() => ToastAndroid.show("Ingresaste", ToastAndroid.SHORT)}
+          <RoundedButton
+            text="Ingresar"
+            onPress={() => ToastAndroid.show("INGRESAR", ToastAndroid.SHORT)}
           />
         </View>
         <View style={styles.formRegister}>
